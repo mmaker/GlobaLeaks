@@ -110,9 +110,9 @@ class TestReceiverSetKey(TestHandler):
 
     def test_Class_encryption_message(self):
 
-        dummy_template = { "en" : "In %EventTime% you've got a crush for Taryn Southern, yay!!"
-                            "more info on: https://www.youtube.com/watch?v=C7JZ4F3zJdY "
-                            "and know that you're not alone!" }
+        dummy_template = "In %EventTime% you've got a crush for Taryn Southern, yay!! \
+                         more info on: https://www.youtube.com/watch?v=C7JZ4F3zJdY \
+                         and know that you're not alone!"
 
         mock_event = Event(type=u'encrypted_tip', trigger='Tip',
                     notification_settings = dummy_template,
