@@ -29,7 +29,11 @@ class TestReceiverSetKey(TestHandler):
         'username': 'evilaliv3@useless_information_on_this_test.org',
         'name': 'assertion',
         'gpg_key_fingerprint': 'CF4A22020873A76D1DCB68D32B25551568E49345',
-        'gpg_key_status': Receiver._gpg_types[1] }
+        'gpg_key_status': Receiver._gpg_types[1],
+        'language': u'en',
+        'timezone': 0,
+        }
+        
 
     receiver_only_update = {
         'gpg_key_armor': None, 'gpg_key_remove': False,
@@ -46,6 +50,8 @@ class TestReceiverSetKey(TestHandler):
         "file_notification": True,
         "tip_notification": False,
         "message_notification": False,
+        "language": u"en",
+        "timezone": 0
     }
 
     @inlineCallbacks
