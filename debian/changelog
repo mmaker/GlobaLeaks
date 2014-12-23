@@ -1,4 +1,4 @@
-globaleaks (2.60.42) wheezy; urgency=medium
+globaleaks (2.60.42) precise; urgency=medium
 
   * New upstream release.
   * debian/:
