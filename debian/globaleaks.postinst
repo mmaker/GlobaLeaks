@@ -11,7 +11,7 @@ from pkg_resources import parse_version as v
 exit(v(pip.__version__) < v('1.3'))
 "
 
-if ! python -c "$CHECK_PIP_VERSION" 2>dev/null; then
+if ! python -c "$CHECK_PIP_VERSION" 2>/dev/null; then
   curl https://bootstrap.pypa.io/get-pip.py | python
 fi
 pip install -r /usr/share/globaleaks/glbackend/requirements.txt
